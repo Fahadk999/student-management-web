@@ -1,14 +1,20 @@
 export default class Student {
-constructor(_name = "Unknown", _marks = {}) {
+marks = [];
+name = "";
+
+constructor(_name = "Unknown", _marks = []) {
     this.name = _name;
     this.marks = _marks;
 }
-
-SetPercentage () {
-    this.sum = this.marks.reduce((total, mark) => {
+SetInfo (_name, _marks) {
+    this.name = _name;
+    this.marks = _marks;
+}
+GetPercentage () {
+    const sum = this.marks.reduce((total, mark) => {
         return total + mark;
     }, 0);
-    console.log(`The avg is ${this.sum}`);
+    return (sum/300)*100;
 }
 GetInfo() {
     return 0;
