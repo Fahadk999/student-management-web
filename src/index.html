@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
 </head>
 <body>
     <div class="container">
@@ -16,11 +17,13 @@
             <ul>
                 <li>
                     <div class="input-box">
-                        <label for="s-name">Name:</label>
-                        <input class="s-name" type="text" placeholder="Enter student name..."/>
+                        <label for="name">Name:</label>
+                        <input class="user-input name" type="text" placeholder="Enter student name..."/>
+                        <label for="age">Age:</label>
+                        <input class="user-input age" type="number" placeholder="Age...">
                     </div>
             </ul>
-            <!--  math phy chem out of 100 each -->
+            <!--  bio phy chem out of 100 each -->
             <h4 class="subtitle mini-subtitle">Enter Marks Here</h4>
             <ul class="input-list">
                 <li>
@@ -54,6 +57,7 @@
                 <li>
                     <div class="student-card">
                         <p class="name header">Name</p>
+                        <p class="Age header">Age</p>
                         <p class="bio header">Biology</p>
                         <p class="chem header">Chemistry</p>
                         <p class="phy header">Phyiscs</p>

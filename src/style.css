@@ -119,10 +119,12 @@ p {
     color: rgb(40, 144, 219);
 }
 
-.s-name {
+.user-input {
+    display: flex;
     border-radius: 20px;
     text-align: center;
     font-family: inherit;
+    width: fit-content;
 }
 
 .student-data {
